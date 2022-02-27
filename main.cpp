@@ -4,44 +4,19 @@ using namespace std;
 
 int main()
 {
-    /*As electronic stopwatches become cheaper and more accurate, we will no doubt be
-deluged with impossibly accurate measurements of time. Write a program that takes as
-input a time period given in seconds, and outputs the number of hours, minutes and
-seconds it represents*/
+/* The common field cricket chirps in direct proportion to the current temperature. Adding 40 to
+the number of times a cricket chirps in a minute, then dividing that value by 4 gives us the
+temperature. Write a program that takes as input the number of chirps in a minute and prints
+the current temperature.*/
 
+//c proportional to t
 
-    int x,h,m,s,y;
-    cout << "Enter the value: ";
-    cin>>x;
-    if(x >= 3600){
-        h = x/3600;
-        y = x -(h*3600);
-        m = y/60;
-        s= y-(m*60);}
-        else
-            if (60<=x <3600){
-           // y = x-(h*3600);
-            m=x/60;
-            s=x-(m*60);}
-            else
-                if (60<x>=0
-                    ){
-                    s=x;
-
-
-                    }
-
-
-    cout<< "Number of hours: ";
-    cout << h;
-    cout<<"\n";
-    cout<< "Number of minutes: ";
-    cout << m;
-    cout<<"\n";
-    cout<< "Number of seconds: ";
-    cout << s;
-    cout<<"\n";
-    cout<<"\n";
-
-
+float c;
+cout<< "Input the value of times the cricket chirps: ";
+cin>> c;
+float t;
+t = (c + 40)/4;
+cout<< "The temperature is: ";
+cout<< t;
+return 0;
 }
