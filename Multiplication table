@@ -1,0 +1,16 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+
+int main(){
+
+int multi[11][11];
+	for (int i = 1; i < 11; i++) {
+		for (int j = 1; j < 11; j++) {
+			multi[i][j] = i * j;
+			cout << multi[i][j] << "    ";
+		}
+		cout << endl;
+	}
+  }
+   
